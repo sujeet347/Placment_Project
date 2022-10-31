@@ -25,7 +25,7 @@ router.post("/update", passport.checkAuthentication, updateUser);
 router.get("/dashboard", dashboard);
 
 // router for sign in page
-router.post("/", signIn);
+router.get("/", signIn);
 
 // route for sign up page
 router.get("/sign-up", signUp);

@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const app = express();
 const port = process.env.PORT || 8000;
+const db = require("./config/mongoose");
 
 app.use(
   bodyParser.urlencoded({
@@ -51,7 +52,7 @@ app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
 
 // using express routers
-app.use("/", require("./routes"));
+app.use(require("./routes"));
 
 // using bodyParser
 app.use(bodyParser.json());

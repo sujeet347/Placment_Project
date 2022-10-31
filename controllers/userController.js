@@ -37,7 +37,7 @@ module.exports.signIn = (req, res) => {
   if (req.isAuthenticated()) {
     return res.redirect("/profile");
   }
-  return res.render("signin");
+  return res.render("signin.ejs");
 };
 
 // render the Sign Up page

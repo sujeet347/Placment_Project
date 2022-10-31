@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const userSchema = new mongoose.Schema(
   {
     username: {
-      type: "String",
+      type: String,
       required: true,
     },
     email: {
-      type: email,
+      type: String,
       required: true,
       unique: true,
     },
@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema(
 );
 
 // validate the password with passed on user password
-userSchema.methods.isValidatedPassword = async function (userSentPassword) {
+userSchema.methods.isValidatePassword = async function (userSentPassword) {
   return this.password === userSentPassword;
 };
 
