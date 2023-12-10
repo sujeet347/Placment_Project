@@ -11,7 +11,7 @@ app.use(
   })
 );
 
-// used for sessions
+// used for session
 const session = require("express-session");
 const passport = require("passport");
 const passportLocal = require("./config/passport");

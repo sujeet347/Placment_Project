@@ -31,3 +31,4 @@ const interviewSchema = new mongoose.Schema(
 const Interview = new mongoose.model("Interview", interviewSchema);
 
 module.exports = Interview;
+//model

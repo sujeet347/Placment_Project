@@ -8,7 +8,7 @@ routers.use("/", require("./users"));
 // student routes
 routers.use("/student", require("./students"));
 
-// interview routes
+// interview route
 routers.use("/interview", require("./interview"));
 
 module.exports = routers;
